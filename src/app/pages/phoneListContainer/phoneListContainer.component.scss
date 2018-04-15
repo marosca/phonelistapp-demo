@@ -1,0 +1,46 @@
+.phone-list-container {
+
+  &__info {
+    position: absolute;
+    top: 1.3em;
+    right: 9em;
+    font-family: Arial;
+    font-size: 0.9em;
+    font-style: italic;
+
+    & > span {
+      font-weight: bold;
+    }
+  }
+  &__phone-detail {
+    width: 31%;
+    margin: 1%;
+    float: left;
+    z-index: 0;
+    transition: all 0.2s ease-in-out;
+
+    &:nth-child(3n+2) {
+      clear:both;
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+      z-index: 1;
+    }
+  }
+
+  &__loading {
+    margin: 2em auto;
+  }
+
+  &__errorMsg {
+    text-align: center;
+    font-family: Arial;
+    color: red;
+    padding: 30px;
+    background: whitesmoke;
+    width: 50%;
+    margin: 0 auto;
+  }
+}

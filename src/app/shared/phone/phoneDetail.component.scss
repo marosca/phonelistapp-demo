@@ -1,0 +1,27 @@
+.phone-detail{
+  min-height: 430px;
+
+  &__title{
+    font-size: 2vw;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    font-size: 1.1em;
+    font-style: italic;
+  }
+
+  &__image {
+    max-height: 250px;
+    width: auto;
+    margin: 0 auto 18px;
+    display: block;
+    max-width: 100%;
+  }
+  &__description {
+    color: silver;
+  }
+  &__price {
+    text-align: right;
+  }
+}

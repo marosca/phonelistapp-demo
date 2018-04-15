@@ -1,0 +1,13 @@
+<mat-card class="phone-detail"
+    [ngClass]="{'animated fadeIn-bottomToTop': isHome}">
+  <mat-card-header class="phone-detail__header">
+    <mat-card-title class="phone-detail__title">{{item?.title}}</mat-card-title>
+    <mat-card-subtitle class="phone-detail__subtitle">{{item?.color}}</mat-card-subtitle>
+  </mat-card-header>
+  <img [src]="item?.image" class="phone-detail__image"
+    mat-card-image/>
+  <mat-card-content class="phone-detail__content">
+    <p class="phone-detail__description">{{item?.description}}</p>
+    <p class="phone-detail__price">Price: {{item?.price}}</p>
+  </mat-card-content>
+</mat-card>

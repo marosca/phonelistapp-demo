@@ -1,0 +1,19 @@
+<!-- TODO: make toolbar another component -->
+<mat-toolbar class="toolbar">
+  <span>Phone List App</span>
+  <span class="example-spacer"></span>
+
+  <a [routerLink]="['/phones']" routerLinkActive="active">
+    <mat-icon class="example-icon">phone</mat-icon>
+  </a>
+
+  <a [routerLink]="['/home']" routerLinkActive="active" disabled>
+    <mat-icon class="example-icon">home</mat-icon>
+  </a>
+
+</mat-toolbar>
+
+<div class="main-container">
+  <router-outlet></router-outlet>
+</div>
+

@@ -1,0 +1,22 @@
+.main-container{
+  width: 90%;
+  margin: 0 auto;
+}
+.toolbar {
+  margin-bottom: 10px;
+}
+.example-icon {
+  padding: 0 14px;
+  color: lightgray;
+  &:hover{
+    color: brown;
+  }
+}
+.active > .example-icon{
+  color:black;
+  cursor: default;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
